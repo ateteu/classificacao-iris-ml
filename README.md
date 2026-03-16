@@ -1,4 +1,4 @@
-# Classificação de Flores Iris com Machine Learning
+# Classificação de flores Iris com ML
 
 Este repositório apresenta um pequeno projeto de machine learning, para aplicar e exercitar conceitos básicos do tema.
 
@@ -19,7 +19,7 @@ O objetivo do modelo é prever a **espécie da flor**, que pode ser:
 * Iris versicolor
 * Iris virginica
 
-## Modelos Utilizados
+## Modelos utilizados
 
 Serão treinados e comparados três modelos de classificação:
 
@@ -27,7 +27,7 @@ Serão treinados e comparados três modelos de classificação:
 * Árvore de Decisão
 * Random Forest
 
-## Pipeline do Projeto
+## Pipeline
 
 1. Carregamento do dataset
 2. Exploração inicial dos dados
@@ -37,19 +37,11 @@ Serão treinados e comparados três modelos de classificação:
 6. Geração de previsões
 7. Avaliação de desempenho
 
-## Como Executar
+## Como executar
 
-Clone o repositório:
-
-git clone URL_DO_REPOSITORIO
-
-Instale as dependências:
-
-pip install -r requirements.txt
-
-Depois abra o notebook:
-
-jupyter notebook
+- Clone o repositório: git clone URL_DO_REPOSITORIO
+- Instale as dependências: pip install -r requirements.txt
+- Depois abra o notebook: jupyter notebook
 
 ## Licença
 
