@@ -54,7 +54,7 @@ Os coeficientes do modelo evidenciam que as features relacionadas às pétalas p
 Apresentou desempenho semelhante, também com acurácia de **~96.67%** e apenas um erro de classificação. A árvore gerada possui baixa profundidade (5) e poucas folhas (8), indicando que o problema pode ser resolvido com regras relativamente simples.
 
 - `Random Forest`:
-Apresentou desempenho ligeiramente inferior **de ~93.33%**, com dois erros de classificação. Ainda assim, o modelo confirmou a importância das features de pétalas, especialmente *petal width*, que apresentou maior relevância na decisão.
+Apresentou desempenho ligeiramente inferior de **~93.33%**, com dois erros de classificação. Ainda assim, o modelo confirmou a importância das features de pétalas, especialmente *petal width*, que apresentou maior relevância na decisão.
 
 
 De forma geral, todos os modelos tiveram alto desempenho, o que é esperado para o dataset Iris, que possui boa separabilidade entre classes.
