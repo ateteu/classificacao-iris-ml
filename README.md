@@ -8,24 +8,24 @@ O conjunto de dados utilizado é o **Iris Dataset**, disponível diretamente na 
 
 Cada observação contém quatro características da flor:
 
-* comprimento da sépala
-* largura da sépala
-* comprimento da pétala
-* largura da pétala
+* Comprimento da sépala
+* Largura da sépala
+* Comprimento da pétala
+* Largura da pétala
 
 O objetivo do modelo é prever a **espécie da flor**, que pode ser:
 
-* Iris setosa
-* Iris versicolor
-* Iris virginica
+* *Iris setosa*
+* *Iris versicolor*
+* *Iris virginica*
 
 ## Modelos utilizados
 
 Serão treinados e comparados três modelos de classificação:
 
-* Regressão Logística
-* Árvore de Decisão
-* Random Forest
+* `Regressão Logística`
+* `Árvore de Decisão`
+* `Random Forest`
 
 ## Pipeline
 
@@ -37,12 +37,26 @@ Serão treinados e comparados três modelos de classificação:
 6. Geração de previsões
 7. Avaliação de desempenho
 
-## Como executar
+## Conclusões e aprendizados
 
-- Clone o repositório: git clone URL_DO_REPOSITORIO
-- Instale as dependências: pip install -r requirements.txt
-- Depois abra o notebook: jupyter notebook
+A análise exploratória mostrou que as **características das pétalas são muito mais discriminativas** do que as da sépala. 
 
-## Licença
+Nos gráficos de dispersão, as pétalas formam grupos bem definidos entre as espécies, enquanto as sépalas apresentam maior sobreposição.
 
-Este projeto está disponível sob a licença MIT.
+
+Em relação aos modelos, observou-se que:
+- `Regressão Logística`:
+Os coeficientes do modelo evidenciam que as features relacionadas às pétalas possuem maior peso na classificação, especialmente na distinção da espécie *virginica*.
+
+  A matriz de confusão da Regressão Logística indicou apenas um erro de classificação, onde uma amostra da classe *versicolor* foi classificada como *virginica*, resultando em alta acurácia: **~96.67%**.
+
+- `Árvore de Decisão`:
+Apresentou desempenho semelhante, também com acurácia de **~96.67%** e apenas um erro de classificação. A árvore gerada possui baixa profundidade (5) e poucas folhas (8), indicando que o problema pode ser resolvido com regras relativamente simples.
+
+- `Random Forest`:
+Apresentou desempenho ligeiramente inferior **de ~93.33%**, com dois erros de classificação. Ainda assim, o modelo confirmou a importância das features de pétalas, especialmente *petal width*, que apresentou maior relevância na decisão.
+
+
+De forma geral, todos os modelos tiveram alto desempenho, o que é esperado para o dataset Iris, que possui boa separabilidade entre classes.
+
+Com isso, este projeto permitiu consolidar conceitos fundamentais de machine learning supervisionado, além de reforçar a importância da análise exploratória para entender quais variáveis realmente contribuem para a solução do problema.
