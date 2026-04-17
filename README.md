@@ -59,4 +59,10 @@ Apresentou desempenho ligeiramente inferior de **~93.33%**, com dois erros de cl
 
 De forma geral, todos os modelos tiveram alto desempenho, o que é esperado para o dataset Iris, que possui boa separabilidade entre classes.
 
-Com isso, este projeto permitiu consolidar conceitos fundamentais de machine learning supervisionado, além de reforçar a importância da análise exploratória para entender quais variáveis realmente contribuem para a solução do problema.
+| Modelo               | Accuracy | Precision | Recall | F1-score |
+|----------------------|----------|-----------|--------|----------|
+| Regressão Logística  | 0.97     | 0.97      | 0.97   | 0.97     |
+| Árvore de Decisão    | 0.97     | 0.97      | 0.97   | 0.97     |
+| Random Forest        | 0.93     | 0.94      | 0.94   | 0.94     |
+
+As métricas de avaliação utilizadas **(accuracy, precision, recall e F1-score)**, juntamente com as matrizes de confusão, apresentaram resultados consistentes entre os modelos, reforçando a estabilidade do problema e a facilidade de separação entre as classes.
